@@ -23,7 +23,7 @@ uname -m: x86_64
 Rate: 1 USD = 129.00 KES, from Central Bank of Kenya, read 2026-11-19
 
 ## My choice
-This client should rent an **Amazon Lightsail 1 GB plan** (645 KES/month).
+This client should rent an **Amazon Lightsail 1 GB plan** (645 KES/month (aws.amazon.com/lightsail/pricing, read 2026-11-19)).
 
 ## Why not bigger, why not smaller
 * **Why not bigger:** During measurement, `free -m` showed only 1413 MB used and `uptime` load average stayed at 0.14, so a larger instance wastes budget on idle capacity.
