@@ -16,6 +16,7 @@ df -h: 2.7G used on /
 uname -m: x86_64
 
 ## My choice
+This client should rent an **Amazon Lightsail $5.00/month plan** (~645 KES/month).
 
 ## What to rent for what
 
