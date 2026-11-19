@@ -26,3 +26,12 @@ One line per gap between this log and the console's audit log: "row 3: ..." for 
 ## Audit match
 
 Rows matched: 5 of 5. Gaps explained: 0.
+
+## SCS3.2 -- sharing, security, backups, offboarding (2026-11-19)
+
+Practice OU only.  Every row written before the click; the check column filled after it.
+
+| # | Time | What I am about to change (console path) | Who or what it affects | Why, in one line | How I checked it | Undo |
+|---|---|---|---|---|---|---|
+| 1 | 17:47 | Admin console > Security > Authentication > 2-step verification | /Trainees/hussink (practice user) | Enforce 2-step verification to prevent credential-only account takeover | Enrolled practice user in 2SV, verified on Security screen and captured screenshot | Set Enforcement back to Off / Inherit on /Trainees/hussink |
+| 2 | 17:56 | Admin console > Apps > Google Workspace > Drive and Docs > Sharing settings | /Trainees/hussink | Block or warn on sharing files outside the business to prevent data leaks | | |
