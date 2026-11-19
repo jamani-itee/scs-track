@@ -17,7 +17,15 @@ uname -m: x86_64
 
 ## My choice
 
-This client should rent an **Amazon Lightsail $5.00/month plan** (~**645 KES/month**) [or **EC2 t3.micro** if your lab requires EC2 — state clearly: e.g., "This client should rent an **EC2 t3.micro** instance (~$7.59/month or **979 KES/month**)"].
+## What to rent for what
+
+- Static site: S3 — $0.023/GB/month (aws.amazon.com/s3/pricing, read 2026-11-19)
+- Small dynamic app: Lightsail — $5.00/month (aws.amazon.com/lightsail/pricing, read 2026-11-19)
+- Small dynamic app (raw VM): t-micro — $0.0104/hr (aws.amazon.com/ec2/pricing/on-demand, read 2026-11-19)
+- Staging: t3.small — $0.0208/hr (aws.amazon.com/ec2/pricing/on-demand, read 2026-11-19)
+- Never: m5.large — $0.096/hr (aws.amazon.com/ec2/pricing/on-demand, read 2026-11-19)
+
+Rate: 1 USD = 129.00 KES, from Central Bank of Kenya, read 2026-11-19
 
 ## Why not bigger, why not smaller
 
