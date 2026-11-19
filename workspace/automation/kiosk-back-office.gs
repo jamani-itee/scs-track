@@ -1,5 +1,5 @@
- // AI-assisted, directed by jamani //
- function checkStock() {
+// AI-assisted, directed by jamani
+function checkStock() {
   const ss = SpreadsheetApp.getActiveSpreadsheet();
   const dashboard = ss.getSheetByName("DASHBOARD");
   if (!dashboard) return;
