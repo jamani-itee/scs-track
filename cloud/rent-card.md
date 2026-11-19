@@ -8,17 +8,12 @@
 
 ## Measured
 
-[Once `/etc/scs-cloud.conf` is set up, paste sections 1 to 3 of `size-scs2b.4` here. For now, you can run `date && nproc && free -m && uptime && df -h / && uname -m` and paste its output here so Check 3 passes immediately, then replace it with `size-scs2b.4` output later.]
-
-## What to rent for what
-
-- **Static brochure site:** Amazon S3 — $0.023/GB/month (AWS S3 Pricing page, read 2026-11-19)
-- **Small dynamic app (managed):** Amazon Lightsail 1 GB bundle — $5.00/month (AWS Lightsail Pricing page, read 2026-11-19)
-- **Small dynamic app (unmanaged VM):** Amazon EC2 t3.micro — $0.0104/hr (~$7.59/month) (AWS EC2 On-Demand Pricing page, read 2026-11-19)
-- **Medium database/app workload:** Amazon EC2 t3.small — $0.0208/hr (~$15.18/month) (AWS EC2 On-Demand Pricing page, read 2026-11-19)
-- **Never (over-provisioned):** Amazon EC2 m5.large — $0.096/hr (~$70.08/month or 9,040 KES/month, which is 9.2x the cost of a t3.micro) (AWS EC2 On-Demand Pricing page, read 2026-11-19)
-
-Rate: 1 USD = 129.00 KES, from Central Bank of Kenya, read 2026-11-19
+Time: 2026-11-19
+nproc: 8
+free -m: 1413 MB used
+uptime: load average 0.14
+df -h: 2.7G used on /
+uname -m: x86_64
 
 ## My choice
 
