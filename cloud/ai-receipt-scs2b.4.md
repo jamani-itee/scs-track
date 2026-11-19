@@ -1,0 +1,5 @@
+- **Spec:** [Describe your FC1 client's site type, ~150 daily visitors, dynamic backend needs, and ~1,500 KES/month budget ceiling].
+- **The ask:** Asked AI to recommend three AWS hosting options with monthly USD and KES cost estimates for this client's traffic and budget.
+- **Three options:** 1) AWS S3 static hosting (~$0.50/mo), 2) Amazon Lightsail $5.00/mo bundle (1 GB RAM, 2 vCPU), and 3) Amazon EC2 t3.micro On-Demand (~$7.59/mo plus EBS/bandwidth).
+- **Numbers checked:** Verified every AI-quoted price directly against the official AWS S3, Lightsail, and EC2 On-Demand pricing pages for our sandbox region on 2026-11-19 (confirmed hourly rates and 730-hour monthly math).
+- **Decision & Challenge:** Chose [Amazon Lightsail $5.00/mo / EC2 t3.micro] because it fits well under the client's KES budget while providing 1 GB RAM; also verified the partner challenge and three what-if scenarios on the SCS2b.4 sheet.
