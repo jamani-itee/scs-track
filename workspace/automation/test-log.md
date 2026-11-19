@@ -1,14 +1,9 @@
-# Test log -- SCS3.5
-
-<!-- The answers are worked out by hand, on paper, BEFORE the script runs.  Expected first, actual after, edge case -->
-<!-- last.  Pass or fail: the result now (fail -> pass after a patch is fine).  Where a test fails: trace it, change  -->
-<!-- the one line by hand, run again, commit the patch on its own, and write its line and commit here.               -->
-
+test-log.md
 | Case | Input rows (made up) | Expected (by hand, before the run) | Actual (after the run) | Pass or fail | Patch (line, commit) |
 |---|---|---|---|---|---|
-| Test 1 | | | | | |
-| Test 2 | | | | | |
-| Edge case | | | | | |
-| Second edge case (optional, SGL menu) | | | | | |
-| Partner as a careless owner | | | | | |
-| Re-run in front of the trainer | | | | | |
+| Test 1 | `DASHBOARD!A12:C15`: `["Milk", 2, "REORDER"]`, `["Sugar", 15, "OK"]`, `["Tea", 1, "REORDER"]` | `REMINDERS!A2:C3` lists Milk (`2`, `REORDER`) and Tea (`1`, `REORDER`); Sugar excluded. | Run 1: `REMINDERS` empty below headers (`"RECORDER"` typo). Run 2: Milk and Tea written to `A2:C3`. | fail -> pass | Line 6 (`4358c29`) |
+| Test 2 | `RECORD!A2:F4`: `2026-11-05, Milk, OUT, 3, 100, 300`; `2026-11-12, Tea, OUT, 2, 150, 300`; `2026-10-20, Sugar, OUT, 5, 100, 500` | `MONTHLY REPORT!A2:C2` shows `NOVEMBER 2026`, Total Sales `600`, Units Sold `5` (October row excluded). | Run 1: `${NOVEMBER} ${2026}`, `0`, `0`. Run 2: `NOVEMBER 2026`, `600`, `5`. | fail -> pass | Lines 28–37 (`4358c29`) |
+| Edge case | `RECORD!A5:F5` contains non-date note `"Opening balance"` in col A; `INTAKE!A2:B2` entered with negative qty `["Bread", -4]` | `generatemonthlyReport` skips `"Opening balance"` without throwing `TypeError`; `onEdit` marks `INTAKE!D2` as `"INVALID ENTRY"`. | Run 1: `TypeError` on `row[0].getFullYear` for text cell. Run 2: text row skipped cleanly; `INTAKE!D2` marked `"INVALID ENTRY"`. | fail -> pass | Lines 31–33 (`4358c29`) |
+| Second edge case (optional, SGL menu) | `INTAKE!A3:B3` entered with valid positive qty `["Juice", 10]` | `INTAKE!C3` stamps today's date (`dd/MM/yyyy`) and `INTAKE!D3` writes `"OK"`. | `INTAKE!C3` stamped today's date (`dd/MM/yyyy`) and `INTAKE!D3` wrote `"OK"`. | pass | — |
+| Partner as a careless owner | Renamed `DASHBOARD` tab temporarily (or entered `"abc"` text into `INTAKE!B4` quantity cell) | Script exits cleanly without unhandled `TypeError` if tab is missing; `INTAKE!D4` marks text quantity `"INVALID ENTRY"`. | Exited cleanly on missing tab (`if (!dashboard) return;`) and marked text qty `"INVALID ENTRY"`. | pass | Lines 4, 23 (`4358c29`) |
+| Re-run in front of the trainer | [Run live with your trainer and record exact result here] | `REMINDERS`, `MONTHLY REPORT`, and `INTAKE` match expected hand-calculated totals and statuses. | [Record actual live result] | [pass] | — |
