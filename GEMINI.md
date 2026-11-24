@@ -5,8 +5,7 @@
 - Google Apps Script V8 in workspace/automation/kiosk-back-office.gs
 
 ## Tests
-- Run node --test workspace/stock-tools/reorder.test.js before committing changes to workspace/stock-tools.
-- Write a failing test reproducing the exact bug input before applying a patch.
+cd workspace/stock-tools && node --test
 
 ## Never
 - Never hardcode API keys or secrets in source files; read from process.env and fail if missing.

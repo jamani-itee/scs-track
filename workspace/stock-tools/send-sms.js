@@ -6,9 +6,9 @@ const { fetchWithRetry } = require("node:http");
 const fs = require("fs");
 const { parseCsv, reorderList, groupBySupplier, formatMessage } = require("./reorder.js");
 
-const apiKey = process.env.SMS_API_KEY;
-if (!apiKey) {
-  throw new Error('Missing SMS_API_KEY environment variable');
+const SMS_API_KEY = process.env.SMS_API_KEY;
+if (!SMS_API_KEY) {
+  throw new Error("Missing SMS_API_KEY environment variable");
 }
 const GATEWAY = "http://sms-gateway.example.invalid/send";
 const OWNER_PHONE = process.env.OWNER_PHONE || "OWNER-PHONE-NOT-SET";
