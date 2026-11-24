@@ -19,6 +19,13 @@ test("lists items below their reorder level", () => {
   assert.deepStrictEqual(list.map((r) => r.Item), ["Cement 50 kg"]);
 });
 
+test("includes items AT their reorder level", () => {
+  const csv = "Item,Supplier,In stock,Reorder at,Unit\n" +
+    "grinding discs 115 mm,Gas and welding supplier,20,20,pieces\n";
+  const list = reorderList(parseCsv(csv));
+  assert.deepStrictEqual(list.map((r) => r.Item), ["grinding discs 115 mm"]);
+});
+
 test("groups the list by supplier", () => {
   const groups = groupBySupplier(reorderList(parseCsv(SAMPLE)));
   assert.deepStrictEqual(Object.keys(groups), ["Building wholesaler"]);
