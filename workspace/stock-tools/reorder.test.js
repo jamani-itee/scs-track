@@ -41,3 +41,10 @@ test("formats the message", () => {
   assert.match(msg, /Building wholesaler:/);
   assert.match(msg, /Cement 50 kg: 5 left/);
 });
+
+test("treats blank In stock cell as 0 so uncounted items still reorder", () => {
+  const csv = "Item,Supplier,In stock,Reorder at,Unit\n" +
+    "Cement 50 kg,Building wholesaler,,20,bags\n";
+  const list = reorderList(parseCsv(csv));
+  assert.deepStrictEqual(list.map((r) => r.Item), ["Cement 50 kg"]);
+});
