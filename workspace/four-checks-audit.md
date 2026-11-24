@@ -9,7 +9,7 @@ page you read and the date you read it.  One section per piece; add a new piece 
 ### Auth
 Looked for: Hardcoded API keys, tokens, passwords, or insecure HTTP URLs in workspace/stock-tools/*.js.
 Found: Hardcoded gateway API key [REDACTED_KEY] on line 9 of workspace/stock-tools/send-sms.js sent over HTTP.
-Evidence: Command: grep -n "SMS_API_KEY" workspace/stock-tools/send-sms.js -> Printed: 9:const SMS_API_KEY = "[REDACTED_KEY]"; (in commit e6f6660).
+Evidence: Command: grep -n "SMS_API_KEY" workspace/stock-tools/send-sms.js -> Printed line 9 in commit e6f6660 (key moved to process.env.SMS_API_KEY).
 
 ### Edge cases
 Ugly inputs, written before trying them: Exact threshold (20 vs 20), blank In stock (""), quoted commas ("Nails, 3 inch"), and apostrophe names (ng'ombe salt lick).
