@@ -8,8 +8,8 @@ page you read and the date you read it.  One section per piece; add a new piece 
 
 ### Auth
 Looked for: Hardcoded API keys, tokens, passwords, or insecure HTTP URLs in workspace/stock-tools/*.js.
-Found: Hardcoded gateway API key LLDEMO-SMS-5c1e9a07d2b84f63 on line 9 of workspace/stock-tools/send-sms.js sent over HTTP.
-Evidence: Command: grep -n "SMS_API_KEY" workspace/stock-tools/send-sms.js -> Printed: 9:const SMS_API_KEY = "LLDEMO-SMS-5c1e9a07d2b84f63"; (in commit e6f6660).
+Found: Hardcoded gateway API key [REDACTED_KEY] on line 9 of workspace/stock-tools/send-sms.js sent over HTTP.
+Evidence: Command: grep -n "SMS_API_KEY" workspace/stock-tools/send-sms.js -> Printed: 9:const SMS_API_KEY = "[REDACTED_KEY]"; (in commit e6f6660).
 
 ### Edge cases
 Ugly inputs, written before trying them: Exact threshold (20 vs 20), blank In stock (""), quoted commas ("Nails, 3 inch"), and apostrophe names (ng'ombe salt lick).
