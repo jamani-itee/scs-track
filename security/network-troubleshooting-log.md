@@ -50,9 +50,9 @@ My guess (device, cable or network): device
 The rung I expected to fail: 2
 Steps taken: 1. Checked active fault card status (none active). 2. Checked ~/scs-faults for guess file (none found).
 The rung that failed: not done: fault card not run
-Sealed log fingerprint: not done: no guess file found in ~/scs-faults
-Card number (27-30): not done: no reveal recorded
-Proved on lab device: not done: not run on lab device
+proved: not done: not run on lab device
+Card number: not done: no reveal recorded
+Fingerprint: not done: no guess file found in ~/scs-faults
 The fault was: not done: fault card not run
 Fixed by: not done: no fix performed
 Put back: not done: not applicable

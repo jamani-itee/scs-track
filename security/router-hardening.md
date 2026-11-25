@@ -23,8 +23,8 @@ kit the owner's card goes to the SA.  The screenshot goes to ~/scs/evidence/scs4
 
 Printer's address (from its own panel or test page): not done: no printer address recorded
 Reserved on the router (yes / no): not done: printer reservation not completed
-Added on a lab laptop by address, test page printed (yes / no): not done: no test page printed on a lab laptop
-Added on a phone, test page printed (yes / no): not done: no test page printed on a phone
+Added on a lab laptop by address, test page printed (yes / no): not done: no test page printed
+Added on a phone, test page printed (yes / no): not done: no test page printed
 Router restarted without the reservation first -- what happened: not done: not performed
 Second look, the next SCS track day -- still at its address after the SAs' power-off (yes / no): not done: next track day
 Anything mechanical, named and referred (not opened): none observed / not opened
