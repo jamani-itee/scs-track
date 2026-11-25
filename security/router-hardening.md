@@ -28,3 +28,9 @@ Added on a phone, test page printed (yes / no): not done: no test page printed
 Router restarted without the reservation first -- what happened: not done: not performed
 Second look, the next SCS track day -- still at its address after the SAs' power-off (yes / no): not done: next track day
 Anything mechanical, named and referred (not opened): none observed / not opened
+
+## Printer check update
+- Printer address: not recorded
+- Reserved on router: no
+- Added on lab laptop with test page: no
+- Added on phone with test page: no
