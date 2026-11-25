@@ -29,7 +29,8 @@ Router restarted without the reservation first -- what happened: not done: not p
 Second look, the next SCS track day -- still at its address after the SAs' power-off (yes / no): not done: next track day
 Anything mechanical, named and referred (not opened): none observed / not opened
 
-## Printer check update
+
+## Evening printer check status (2026-11-25)
 - Printer address: not recorded
 - Reserved on router: no
 - Added on lab laptop with test page: no

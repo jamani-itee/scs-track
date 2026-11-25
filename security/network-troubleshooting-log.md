@@ -64,7 +64,7 @@ Step I did by hand: not done: did not plant a fault card
 Undo: not done: did not plant a fault card
 How I checked it: not done: did not plant a fault card
 
-## Evening check note (2026-11-25)
-- Sealed log fingerprint: none (~/scs-faults/guess-*.txt not found on machine)
-- Fault card reveal / lab proof: not done
-- Planted card: not done
+## Evening check status (2026-11-25)
+- Sealed log fingerprint: missing (~/scs-faults/guess-*.txt not found)
+- Fault card section: not done (no paper log or reveal recorded)
+- Planted-card section: not done (no paper log or manual step recorded)
