@@ -43,27 +43,6 @@ The fault was: not done: second fault details not completed from paper log
 Fixed by: not done: not recorded
 Put back: not done: not checked on station
 
-## Fault 3 -- fault card, I was the fixer
-
-Symptom: not done: fault card exercise not completed on station
-My guess (device, cable or network): device
-The rung I expected to fail: 2
-Steps taken: 1. Checked active fault card status (none active). 2. Checked ~/scs-faults for guess file (none found).
-The rung that failed: not done: fault card not run
-proved: not done: not run on lab device
-Card number: not done: no reveal recorded
-Fingerprint: not done: no guess file found in ~/scs-faults
-The fault was: not done: fault card not run
-Fixed by: not done: no fix performed
-Put back: not done: not applicable
-
-## The card I planted
-
-Card number: not done: did not plant a fault card
-Step I did by hand: not done: did not plant a fault card
-Undo: not done: did not plant a fault card
-How I checked it: not done: did not plant a fault card
-
 ## Evening check status (2026-11-25)
 - Sealed log fingerprint: missing (~/scs-faults/guess-*.txt not found)
 - Fault card section: not done (no paper log or reveal recorded)
