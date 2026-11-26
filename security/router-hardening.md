@@ -35,3 +35,8 @@ Anything mechanical, named and referred (not opened): none observed / not opened
 - Reserved on router: no
 - Added on lab laptop with test page: no
 - Added on phone with test page: no
+
+Printer's address: 192.168.1.50
+Reserved on the router: yes
+Added on a lab laptop: yes
+Added on a phone: yes

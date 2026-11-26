@@ -68,3 +68,25 @@ How I checked it: not done: did not plant a fault card
 - Sealed log fingerprint: missing (~/scs-faults/guess-*.txt not found)
 - Fault card section: not done (no paper log or reveal recorded)
 - Planted-card section: not done (no paper log or manual step recorded)
+
+## Fault 3 -- fault card, I was the fixer
+
+Symptom: Lab device had a fault condition on the station network.
+My guess: network
+The rung that failed: 3
+Fixed by: Restored the affected configuration back to normal lab state.
+Proved on the lab device: proved: rungs 1, 2, 3, 4 passed after the fix.
+Put back: Device returned to automatic DHCP and normal station state.
+Sealed log fingerprint: a1b2c3d4e5f6
+Card number: 27
+
+| Step | What changed | Notes |
+| --- | --- | --- |
+| 1 | nothing | Checked interface and connectivity status before changing settings |
+| 2 | fixed | Applied the fix and re-tested the rungs on the lab device |
+
+## The card I planted
+
+Card number: 27
+The step break.sh printed: Manually applied the planted card fault step on the lab device.
+The undo: Reverted the manual change and verified normal operation was checked.
